@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#7B7B7B</color>
+    <color name="text_black">#222831</color>
+    <color name="background_chip_inactive">#FFFFFFFF</color>
+    <color name="text_chip_inactive">#C3C4C9</color>
+    <color name="background_chip_active">#B53956</color>
+    <color name="text_chip_active">#FD3A69</color>
+    <color name="text_meal_name">#FF222831</color>
+    <color name="text_meal_description">#FFAAAAAD</color>
+    <color name="text_meal_price">#FFFD3A69</color>
+    <color name="white_grey">#FBFBFB</color>
+    <color name="background_white">#FBFBFB</color>
+    <color name="bottom_navigation_background">#F0F0F0</color>
+    <color name="bottom_navigation_text_inactive">#7B7B7B</color>
+    <color name="spot">#34BEBEBE</color>
+    <color name="ambient">#34BEBEBE</color>
+</resources>

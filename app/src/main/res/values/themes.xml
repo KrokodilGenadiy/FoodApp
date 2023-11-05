@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodTestApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+    </style>
+
+    <style name="Colors_Widget.MaterialComponents.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/color_choice_chip_background_color</item>
+        <item name="chipStrokeColor">@color/color_choice_chip_strokecolor_selector</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/color_choice_chip_text_color</item>
+        <item name="checkedIconEnabled">false</item>
+        <item name="fontFamily">roboto_light</item>
+        <item name="shapeAppearanceOverlay">@style/chipRectShape</item>
+    </style>
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/bottom_navigation_background</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="itemIconTint">@color/bnv_tab_item_foreground</item>
+        <item name="itemTextColor">@color/bnv_tab_item_foreground</item>
+    </style>
+
+    <style name="chipRectShape">
+        <item name="elevation">10dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="Theme.FoodTestApp" parent="Base.Theme.FoodTestApp" />
+</resources>

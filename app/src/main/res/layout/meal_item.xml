@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/dimens_135dp"
+        android:layout_height="@dimen/dimens_135dp"
+        android:src="@drawable/pizza_placeholder"
+        android:layout_marginVertical="@dimen/dimens_16dp"
+        android:layout_marginStart="@dimen/dimens_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="@dimen/dimens_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens_22dp"
+        android:layout_marginTop="@dimen/dimens_16dp"
+        android:layout_marginEnd="@dimen/dimens_16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textAlignment="viewStart"
+        android:textColor="@color/text_meal_name"
+        android:textSize="@dimen/dimens_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ветчина и грибы" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="@dimen/dimens_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="@dimen/dimens_8dp"
+        android:layout_marginEnd="@dimen/dimens_16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_light"
+        android:maxLines="3"
+        android:textAlignment="viewStart"
+        android:textColor="@color/text_meal_description"
+        android:textSize="@dimen/dimens_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        tools:text="Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_8dp"
+        android:layout_marginEnd="@dimen/dimens_16dp"
+        android:background="@drawable/background_price"
+        android:paddingHorizontal="@dimen/dimens_18dp"
+        android:paddingVertical="@dimen/dimens_8dp"
+        android:textColor="@color/text_meal_price"
+        android:textSize="@dimen/dimens_13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        tools:text="от 345 р" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
